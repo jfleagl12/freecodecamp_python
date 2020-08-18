@@ -1,21 +1,39 @@
+# import random
+#
+# print("WELCOME")
+#
+# r1=random.randint(1,6)
+#
+# while True:
+#
+#     print("YOU ROLLED THE DICE",r1)
+#
+#     r1=random.randint(1,6)
+#
+#     user_input=(input("ENTER Y OR N:"))
+#
+#     if user_input=="N":
+#
+#         break
+#
+#     else:
+#
+#         continue
+#
+
 import random
 
-print("WELCOME")
+min = 1
+max = 100
 
-r1=random.randint(1,6)
+roll_again = "yes"
 
-while True:
+while roll_again == "yes" or roll_again == "y":
 
-    print("YOU ROLLED THE DICE",r1)
+  print("Rolling the dice...")
 
-    r1=random.randint(1,6)
+  print("The values are....")
 
-    user_input=(input("ENTER Y OR N:"))
+  print (random.randint(min, max))
 
-    if user_input=="N":
-
-        break
-
-    else:
-
-        continue  
+  roll_again = input("Roll the dice again?")
